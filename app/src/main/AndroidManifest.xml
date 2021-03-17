@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pap.cinetrack">
+
+    <supports-screens
+        android:largeScreens="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:xlargeScreens="true"
+        android:resizeable="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CineTrack"
+        android:screenOrientation="portrait"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="29">
+
+        <activity android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+
+        </activity>
+
+        <activity android:name=".DetailActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        </activity>
+
+        <activity android:name=".PaizetaiTwra"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Categories" />
+        </activity>
+
+        <activity
+            android:name=".New_Movies"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:usesCleartextTraffic="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Categories" />
+
+        </activity>
+
+        <activity
+            android:name=".Categories"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- οταν αυτο εδω ειναι μεσα στο splash ξεκιναει αυτο, αν το βαλω μεσα στο main θα ξεκιναει απο το main -->
+            </intent-filter>
+
+        </activity>
+
+</application>
+
+</manifest>

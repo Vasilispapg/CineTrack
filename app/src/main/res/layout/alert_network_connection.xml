@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="342dp"
+        android:layout_height="342dp"
+        android:background="@drawable/ic_wifi"
+        android:layout_gravity="center"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Internet Connenction"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check your internet connection"
+        android:textStyle="bold"
+        android:layout_marginTop="90dp"
+        android:fontFamily="monospace"
+        android:layout_gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <Button
+        android:id="@+id/retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RETRY"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="30dp"/>
+
+
+
+
+</LinearLayout>

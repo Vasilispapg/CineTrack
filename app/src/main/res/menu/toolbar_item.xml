@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="collapseActionView|ifRoom"
+        android:title="@android:string/ok"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:id="@+id/coming_soon"
+        app:showAsAction="collapseActionView|ifRoom"
+        android:title="Coming Soon" />
+
+
+<!--    <item-->
+<!--        android:id="@+id/pallace"-->
+<!--        android:title="Pallace Cinema"-->
+<!--        app:showAsAction="never"/>-->
+<!--    <item-->
+<!--        android:id="@+id/metrpol"-->
+<!--        android:title="Metropol Cinema"-->
+<!--        app:showAsAction="never"/>-->
+
+</menu>

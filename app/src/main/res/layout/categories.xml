@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgkround_categories">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/castellar"
+        android:text="CineTrack"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/but1"
+        android:layout_width="162dp"
+        android:layout_height="68dp"
+        android:background="@drawable/button_custom_white"
+        android:visibility="visible"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/provaletai_twra_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Προβάλεται Τωρα"
+        android:textColor="@color/colorPrimary"
+        android:elevation="10dp"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/but1"
+        app:layout_constraintEnd_toEndOf="@+id/but1"
+        app:layout_constraintStart_toStartOf="@+id/but1"
+        app:layout_constraintTop_toTopOf="@+id/but1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Προσεχώς Ταινίες"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/but2"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/but2"
+        app:layout_constraintStart_toStartOf="@+id/but2"
+        app:layout_constraintTop_toTopOf="@+id/but2" />
+
+    <Button
+        android:id="@+id/but2"
+        android:layout_width="162dp"
+        android:layout_height="68dp"
+        android:background="@drawable/button_custom_white"
+        android:visibility="visible"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but1" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ωράρια"
+        android:textColor="@color/colorPrimary"
+        android:elevation="10dp"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/but3"
+        app:layout_constraintEnd_toEndOf="@+id/but3"
+        app:layout_constraintStart_toStartOf="@+id/but3"
+        app:layout_constraintTop_toTopOf="@+id/but3" />
+
+    <Button
+        android:id="@+id/but3"
+        android:layout_width="162dp"
+        android:layout_height="68dp"
+        android:background="@drawable/button_custom_white"
+        android:visibility="visible"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:elevation="10dp"
+        android:text="Επικοινωνία"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/but4"
+        app:layout_constraintEnd_toEndOf="@+id/but4"
+        app:layout_constraintHorizontal_bias="1.8"
+        app:layout_constraintStart_toStartOf="@+id/but4"
+        app:layout_constraintTop_toTopOf="@+id/but4"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <Button
+        android:id="@+id/but4"
+        android:layout_width="162dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_custom_white"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/but3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
